@@ -1,69 +1,37 @@
-![MSUS Solution Accelerator](./images/MSUS%20Solution%20Accelerator%20Banner%20Two_981.jpg)
+# Call Center Intelligence: Powered by Azure AI
+ 
+ This is a sample solution for Call Center Intelligence powered by Azure AI. It shows how Azure AI services could be used both in real-time and batch scenarios for an Intelligent Contact Center.
 
-## About this repository
-This accelerator was built to provide developers with all of the resources needed to build a solution to....
+ Below diagram depicts key components and Azure services used in this sample solution.
 
+<img src="common/images/highleveloverview.PNG" align="center" />
 
-## Getting Started 
-Start by deploying the resources needed for this solution: 
+## Contents
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](path_to_azuredeploy.json)
+Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
 
-1. Clone this repository and navigate to the root of the directory  
-2. Go to the [Deployment Guide](./DEPLOY.md) for the steps you need to take to deploy this solution 
+| Folder                              | Description                                |
+|-------------------|--------------------------------------------|
+| [azure-custom-speech](azure-custom-speech)              | Sample data and instructions to create custom transcription model using Azure Speech service (Step 1 in above diagram). This step produces a sample custom speech model. This step also enables speech logging to capture real-time call audio.                  |
+| [azure-speech-streaming-reactjs](azure-speech-streaming-reactjs)    | Java Script applications that simulates real-time call intelligence (Step 2 in above diagram). This application also captures audio conversation that could be used in the next step for batch call analytics.             |
+| [call-batch-analytics](call-batch-analytics)      | ARM template file and deployment guide for performing ingestion & batch analytics of calls using various Azure AI services (Step 3 in above diagram). This part of the solution can be used either with data output from step 2 OR using sample call recordings (if you have that).   |
+| [powerbi](powerbi)                  | Template files and deployment guide for visualizing call insights using Power BI (Step 4 in above diagram).      |
+
 
 ## Prerequisites
-In order to successfully complete your solution, you will need to have access to and or provisioned the following:
-1. item 1
-2. item 2
-3. item 3
 
-### Optional
-1. item 1
-
-## Azure Platform
-The directions provided for this repository assume fundemental working knowledge of ...
-
-For additional training and support, please see:
- 1. item 1
- 2. item 2
- 3. item 3
-
-## Process Overview  
+* An existing [Azure Account](https://azure.microsoft.com/free/)
+* Ensure you have [Node.js](https://nodejs.org/en/download/) installed. Required for `Step 2` only.
+* Ensure you have [Power BI](https://powerbi.microsoft.com/en-us/downloads/) installed. Required for `Step 4` only.
 
 
-## License
-Copyright (c) Microsoft Corporation
+## Dependencies
 
-All rights reserved.
+This solution is modular and some part of the solution can be used independently and some components depends on other steps to be completed. In summary, real-time and batch call analytics can be used independently. Below is a list of dependencies:
+* Step 2 depends on Step 1 to be completed. Custom Speech model created in Step 1 is used in Step 2. Step 2 can be used without step 1 with minor code modifications (for advanced users only).
+* Step 3 and Step 4 can be used independently, if you have sample call recordings. If you don't have sample call recordings, then use Step 2 to simulate business conversations and capture the recording that you could use in this step.
 
-MIT License
+## Getting started
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the ""Software""), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Follow the individual instructions for each step of the solution provided within above `Folders`.
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-
-
-## Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## Trademarks
-
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.

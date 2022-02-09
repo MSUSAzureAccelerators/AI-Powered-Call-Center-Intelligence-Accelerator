@@ -1,0 +1,11 @@
+[
+    {
+        "name": "speech",
+        "subscription_key": "2e7b1e3a316a4d5dac86a7d4460f4c80",
+        "region": "centralus",
+        "endpoint_id": "036d9808-81bd-40d4-bf82-b46e131da519",
+        "text_analytics_key": "4ae0acaad9624f9e8c5a6d67af4393c5",
+        "text_analytics_endpoint": "https://callcenterai.cognitiveservices.azure.com/",
+        "web_port": "8080"
+    }
+]

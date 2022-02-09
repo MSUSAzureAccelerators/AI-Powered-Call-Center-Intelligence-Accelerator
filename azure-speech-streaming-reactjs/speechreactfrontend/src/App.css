@@ -1,0 +1,40 @@
+.main-container {
+  margin-top: 100px;
+}
+
+.fa-microphone {
+  color: #14A76C;
+}
+
+.fa-microphone:hover {
+  color: #d44916;
+}
+
+.fa-file-audio {
+  color: #FF652F;
+}
+
+.fa-file-audio:hover {
+  color: #d44916;
+}
+
+.output-display {
+  background-color: #f9f6fa;
+  color: white;
+  height: 700px;
+}
+
+.nlpoutput-display {
+  background-color: #72e7ce;
+  color: white;
+  height: 700px;
+}
+
+.fas, .fa {
+  cursor: pointer;
+}
+
+.background {
+  background-color: #272727;
+  color: #747474;
+}
