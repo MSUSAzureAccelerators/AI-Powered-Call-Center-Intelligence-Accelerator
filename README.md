@@ -1,8 +1,8 @@
 ![MSUS Solution Accelerator](./images/MSUS%20Solution%20Accelerator%20Banner%20Two_981.png)
 
-# AI Powered Call Center Intelligence Solution Accelerator
+# AI Powered Call Center Intelligence Accelerator
 
-The AI Powered Call Center Intelligence Solution Accelerator drives huge cost saving in call center operations while improving call center efficiency & customer satisfaction.
+The AI Powered Call Center Intelligence Accelerator drives huge cost saving in call center operations while improving call center efficiency & customer satisfaction.
 
 It improves the manager, call center agent, and customer experience in real-time scenarios by supporting guidance into next-best action, next-best offer, cross-sell, and up-sell as well as enabling a more personalized and efficient experience.
 Delivers deeper business insights for managers and enables them to evaluate call center performance far more efficiently and effectively in batch scenarios.  
