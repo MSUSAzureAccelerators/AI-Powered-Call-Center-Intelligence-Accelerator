@@ -2,7 +2,7 @@
 
 # AI Powered Call Center Intelligence Accelerator
 
-The AI Powered Call Center Intelligence Accelerator drives huge cost saving in call center operations while improving call center efficiency & customer satisfaction.
+The Call Center Intelligence Accelerator drives huge cost saving in call center operations while improving call center efficiency & customer satisfaction.
 
 It improves the manager, call center agent, and customer experience in real-time scenarios by supporting guidance into next-best action, next-best offer, cross-sell, and up-sell as well as enabling a more personalized and efficient experience. It delivers deeper business insights for managers and enables them to evaluate call center performance far more efficiently and effectively in batch scenarios. Data insight on customer sentiment, topic analysis, and other valuable call attributes are served up in a user-friendly visual dashboard in Power BI.
 
@@ -42,7 +42,6 @@ This accelerator is modular and some parts can be used independently and some co
 Follow the individual instructions for each step of the accelerator provided within above `Folders`.
 
 ## License
-
 Copyright (c) Microsoft Corporation
 
 All rights reserved.
@@ -72,8 +71,7 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ## Trademarks
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
+This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow 
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
